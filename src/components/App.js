@@ -1,10 +1,10 @@
 import React from "react";
-import Transport from "./components/Transport";
+import Transport from "./transport/Transport";
 
 function App() {
   return (
     <div className="App">
-      <Transport greeting="hello" />
+      <Transport />
     </div>
   );
 }
