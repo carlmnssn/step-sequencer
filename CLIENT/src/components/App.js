@@ -151,7 +151,6 @@ const App = () => {
   const toggleSnare = (e) => {
     e.preventDefault();
     stopSeq()
-
     const newArr = []
     snareState.map((step, i) => {
       if (i === Number(e.target.id)) {
@@ -162,7 +161,6 @@ const App = () => {
     })
     setSnareState(newArr)
     e.target.classList.toggle('active');
-
   }
 
   const toggleHH = (e) => {
@@ -178,7 +176,6 @@ const App = () => {
     })
     setHhState(newArr)
     e.target.classList.toggle('active');
-
   }
 
   const toggleOH = (e) => {
@@ -194,7 +191,6 @@ const App = () => {
     })
     setOhState(newArr)
     e.target.classList.toggle('active');
-
   }
 
   // SELECT SOUND, ONE FOR EACH 
@@ -221,6 +217,7 @@ const App = () => {
 
 
   return (
+
     <div className="App">
       <div className="header">DrummerBoi 3000</div>
       <div className="transport">
