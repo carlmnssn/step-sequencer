@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:100&display=swap');
+
+
 * {
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
   border: 0;
   margin: 0;
   box-sizing: border-box;
@@ -7,17 +10,114 @@
 
 .App {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin-top: 30vh;
-  font-size:
+  align-content:center;
+  align-items:center;
+  background: #242424;
 }
 
 .App button {
   font-size: 2em;
   border: 1px solid black;
+  border-radius: 10px;
   margin: 3px;
+  color: #FFCF55;
+  background: #6C6C6C;
 }
 
 .App button:focus {
   outline: none;
+}
+
+.App button:hover {
+  background: rgb(114, 129, 129);
+}
+
+.transport {
+  padding: 30px;
+  background: #242424;
+  width: 100vw;
+  display:flex;
+  justify-content: center;
+}
+
+.transport button {
+  margin: 0 1em;
+  padding: 0.4em;
+}
+
+.tracks {
+  padding: 30px;
+  background: #242424;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step {
+  width: 40px;
+  border-radius:10px;
+  text-align:center;
+}
+
+.step:nth-child(4n+1) {
+  background: rgb(142, 151, 151);
+}
+
+.step:hover {
+  background: rgb(114, 129, 129);
+}
+
+.track-steps .active {
+  background: tomato;
+}
+
+.track-steps .active:hover {
+  background: rgb(252, 126, 104);
+}
+
+
+.track-steps .is-live {
+  background: rgb(151, 151, 151);
+}
+
+body {
+  background: #242424;
+ 
+}
+
+.header {
+  font-size:5em;
+  padding:1em;
+  color: #FFCF55;
+}
+
+.bpm-display {
+  font-size:1.3em;
+  color: #FFCF55;
+}
+
+.select-sound {
+  width: 180px;
+  height: 40px;
+  font-size: 1.5em;
+  background: #6C6C6C;
+  color: #FFCF55;
+}
+
+.track-settings {
+  display: flex;
+  align-items:center;
+  align-content:center;
+}
+
+.awake-display {
+  color:#FFCF55;
+}
+
+.App .awake-btn {
+  font-size:1em;
+  background: rgb(59, 59, 59);
 }
