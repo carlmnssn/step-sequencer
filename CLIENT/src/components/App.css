@@ -1,0 +1,23 @@
+* {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  margin-top: 30vh;
+  font-size:
+}
+
+.App button {
+  font-size: 2em;
+  border: 1px solid black;
+  margin: 3px;
+}
+
+.App button:focus {
+  outline: none;
+}
